@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@android:color/white"
+    tools:context="com.wiztech.taxation_app.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivLeft"
+        android:layout_width="400dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="-90dp"
+        android:src="@drawable/login_left_corner" />
+
+
+    <TextView
+        android:id="@+id/iv_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to SMC!"
+        android:textColor="@color/appColor"
+        android:textSize="26sp" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/splash_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/iv_sign_in"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/splash_icon"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:layout_below="@+id/ivLeft"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-70dp"
+        android:src="@mipmap/logo_color" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/iv_sign_in"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            />
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxEms="1"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawable="@android:color/transparent"
+            android:fontFamily="monospace"
+            android:inputType="textPassword"
+            android:maxEms="1"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/tv_login_forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Forgot Password?"
+            android:visibility="invisible"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_filled_bg"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@color/appColor"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

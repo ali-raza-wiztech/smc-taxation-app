@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Taxation-App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">hi, Ali Raza</string>
+    <string name="nav_header_subtitle">ali@taxation.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home"></string>
+    <string name="menu_gallery">Payment History</string>
+    <string name="menu_gallery2">Home</string>
+    <string name="menu_slideshow">Contact Us</string>
+    <string name="profile">Profile</string>
+    <string name="accounts">Accounts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_gradient"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.wiztech.taxation_app.ui.contact_us.ContactUsFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:background="@drawable/header_image_contact_us">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back_button_white" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Contact US"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"
+            android:text="Acc No: 0021"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivLeft"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/login_left_corner" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-135dp"
+        android:background="@drawable/round_corner_for_bill_detail"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/whatsapp_icon_app_color"
+            android:text="WhatsApp"
+            android:textColor="@color/appColor" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/rlCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/et_round_shape"
+            android:layout_weight="1"
+
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            >
+
+            <TextView
+                android:id="@+id/tvTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00 am to 5:00 pm"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawableTop="@drawable/call_icon_app_color"
+                android:drawableTint="@color/appColor"
+                android:text="Phone"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/appColor" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_filled_bg"
+            android:layout_weight="1"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/msg_icon_white"
+                android:text="Message"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_filled_bg"
+            android:layout_weight="1"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/email_icon_white"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGetInTouch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_filled_bg"
+            android:layout_weight="1"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/get_in_touch_icon"
+                android:drawableTint="@color/white"
+                android:text="Complaint"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_marginBottom="-30dp"
+    tools:context="com.wiztech.taxation_app.SplashActivity">
+
+
+    <TextView
+        android:id="@+id/tvMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMiddle"
+        android:layout_marginTop="-60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/splash_icon"
+            android:layout_width="114dp"
+            android:layout_height="112dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/logo_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splash_icon"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="SMC"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splash_icon"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="Taxation App"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:text="Sukkur is a city in the Pakistani province of Sindh along the western bank of the Indus River, directly across from the historic city of Rohri. Sukkur is the third-largest city in Sindh after Karachi and Hyderabad and is the 14th most populous city in Pakistan. "
+            android:textAlignment="textEnd"
+            android:textSize="14sp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/splash_bottom_right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-20dp"
+            android:src="@drawable/arrow_right" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

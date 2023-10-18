@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.wiztech.taxation_app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.wiztech.taxation_app.ui.contact_us.ContactUsFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.wiztech.taxation_app.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_billDetail"
+            app:destination="@id/nav_billDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_billDetail"
+        android:label="Bill Detail"
+        android:name="com.wiztech.taxation_app.ui.BillDetailFrag"
+        tools:layout="@layout/fragment_bill_detail"
+        />
+    <fragment
+        android:id="@+id/nav_contactUsFrag"
+        android:name="com.wiztech.taxation_app.ui.ContactUsFrag"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us"
+        >
+    </fragment>
+    <action android:id="@+id/logout" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.wiztech.taxation_app.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+</navigation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/bill_history_round_corner_shape.xml" value="0.282" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/circle_drawable_home.xml" value="0.2455" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/circle_for_home_dues.xml" value="0.3365" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/et_round_shape.xml" value="0.2965" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/home_gradient.xml" value="0.2455" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/ic_bars_solid.xml" value="0.3175" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/ic_home_black.xml" value="0.3105" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/ic_user_solid.xml" value="0.3105" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/left_pizza.xml" value="0.2455" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/pizz_bottom_left.xml" value="0.2455" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/right_pizza.xml" value="0.2455" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/round_corner_for_bill_detail.xml" value="0.3365" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/round_corner_shape.xml" value="0.3175" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/drawable/round_filled_bg.xml" value="0.2455" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/activity_login.xml" value="0.36302083333333335" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/app_bar_main.xml" value="0.36302083333333335" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/bill_history_row.xml" value="0.5" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/content_main.xml" value="0.36302083333333335" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/et_round_shape.xml" value="0.36302083333333335" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/fragment_bill_detail.xml" value="0.3333333333333333" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/fragment_complaint.xml" value="0.36302083333333335" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/fragment_contact_us.xml" value="0.17552083333333332" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/fragment_gallery.xml" value="0.4466666666666667" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/fragment_slideshow.xml" value="0.6" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/home_group_item.xml" value="0.36302083333333335" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/layout/nav_header_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/menu/activity_main_drawer.xml" value="0.4466666666666667" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3333333333333333" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/menu/main.xml" value="0.36302083333333335" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16" />
+        <entry key="..\:/Office Data/Taxation-App/app/src/main/res/xml/provider_paths.xml" value="0.36302083333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

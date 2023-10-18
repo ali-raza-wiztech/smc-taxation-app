@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.wiztech.taxation_app.ui.BillDetailFrag">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button_white"
+            app:tint="@android:color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:src="@drawable/logout_icon_red" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:paddingBottom="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/dummy_user_pic" />
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:text="Hello"
+            android:textColor="@color/appColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHello"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:text="Ali Raza Soomro"
+            android:textColor="@color/appColor"
+
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_filled_bg"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="65dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/etPostalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postal Address"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivAddress"
+            android:text="Email Address"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ali@ALigmail.com"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivAddress"
+            android:text="Phone"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="03001234567"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cnic"
+            android:textColor="@android:color/black"
+            android:hint="Address"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adddjkdhdhddhdhd"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
