@@ -57,7 +57,7 @@ public class HomeFragment extends Fragment {
         apiInterface = APIClient.getClient().create(ApiEndpointInterface.class);
         Call<GetConsumerAccountsResponse> call = apiInterface.getConsumerAccounts(
                 "Bearer " + LoginSession.getUserToken(getActivity()),
-                10);
+                user.getId());
         call.enqueue(new Callback<GetConsumerAccountsResponse>() {
             @Override
             public void onResponse(Call<GetConsumerAccountsResponse> call, Response<GetConsumerAccountsResponse> response) {
