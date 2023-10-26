@@ -49,6 +49,8 @@ public class AttributeGroupsAdapter extends RecyclerView.Adapter<AttributeGroups
             holder.relativeLayout.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.right_pizza) );
         }else if (position==2){
             holder.relativeLayout.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.pizz_bottom_left) );
+        }else if (position==3){
+            holder.relativeLayout.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.pizz_bottom_right) );
         }
         else if (position/2  ==0){
             holder.relativeLayout.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.left_pizza) );
@@ -56,26 +58,34 @@ public class AttributeGroupsAdapter extends RecyclerView.Adapter<AttributeGroups
             holder.relativeLayout.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.right_pizza) );
         }
 
-
-        holder.tv_name.setText(""+myListData.getAttributeGroup().title);
+        if (myListData.getAttributeGroup().getId()>0){
+            holder.tv_name.setText(""+myListData.getAttributeGroup().title);
+            holder.tv_name.setVisibility(View.VISIBLE);
+            holder.iv_icon.setVisibility(View.VISIBLE);
+        }else{
+            holder.tv_name.setVisibility(View.INVISIBLE);
+            holder.iv_icon.setVisibility(View.INVISIBLE);
+        }
 //        holder.tvCnic.setText(""+myListData.getCnic());
 //        holder.tvGender.setText(""+myListData.getRelationshipWithPensioner());
 //        holder.tv_address.setText(""+myListData.getAddress());
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle=new Bundle();
-                bundle.putInt("consumer_account_id",myListData.getId());
-                bundle.putInt("attribute_group_id",myListData.getAttributeGroup().getId());
-                bundle.putString("recoveryHead",""+myListData.getAttributeGroup().getTitle());
-                Fragment fragment= new SlideshowFragment();
-                fragment.setArguments(bundle);
+                if (myListData.getAttributeGroup().getId()>0){
+                    Bundle bundle=new Bundle();
+                    bundle.putInt("consumer_account_id",myListData.getId());
+                    bundle.putInt("attribute_group_id",myListData.getAttributeGroup().getId());
+                    bundle.putString("recoveryHead",""+myListData.getAttributeGroup().getTitle());
+                    Fragment fragment= new SlideshowFragment();
+                    fragment.setArguments(bundle);
 
-                FragmentManager fragmentManager = Objects.requireNonNull((MainActivity) context).getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.add(R.id.container,fragment);
-                fragmentTransaction.addToBackStack("");
-                fragmentTransaction.commit();
+                    FragmentManager fragmentManager = Objects.requireNonNull((MainActivity) context).getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.add(R.id.container,fragment);
+                    fragmentTransaction.addToBackStack("");
+                    fragmentTransaction.commit();
+                }
             }
         });
     }
@@ -86,7 +96,7 @@ public class AttributeGroupsAdapter extends RecyclerView.Adapter<AttributeGroups
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView imageView;
+        public ImageView iv_icon;
         public TextView tv;
         public TextView tvCnic;
         public TextView tv_name,tv_address;
@@ -95,6 +105,7 @@ public class AttributeGroupsAdapter extends RecyclerView.Adapter<AttributeGroups
         public ViewHolder(View itemView) {
             super(itemView);
             this.tv_name = itemView.findViewById(R.id.tv_name);
+            this.iv_icon=itemView.findViewById(R.id.iv_icon);
 //            this.tvGender =  itemView.findViewById(R.id.tv_gender);
 //            this.tvCnic =  itemView.findViewById(R.id.tv_cnic);
 //            this.tv_address=itemView.findViewById(R.id.tv_address);

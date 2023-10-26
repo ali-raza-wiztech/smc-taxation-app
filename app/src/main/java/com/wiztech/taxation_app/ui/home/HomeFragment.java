@@ -23,6 +23,7 @@ import com.wiztech.taxation_app.networking.ApiEndpointInterface;
 import com.wiztech.taxation_app.networking.responses.GetConsumerAccountsResponse;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -93,7 +94,19 @@ public class HomeFragment extends Fragment {
 
 
     void setupAttributeGroups(RecyclerView recyclerView, List<ConsumerAccount> list) {
-        AttributeGroupsAdapter adapter = new AttributeGroupsAdapter(list, getActivity());
+        List<ConsumerAccount> finalist=new ArrayList<>();
+        finalist.addAll(list);
+        if (list!=null){
+            for (int d=1; d<=(4-list.size()); d++){
+                ConsumerAccount account=new ConsumerAccount();
+                AttributeGroup group=new AttributeGroup();
+                group.setTitle("");
+                account.setAttributeGroup(group);
+                finalist.add(account);
+            }
+        }
+
+        AttributeGroupsAdapter adapter = new AttributeGroupsAdapter(finalist, getActivity());
 //        recyclerView.setHasFixedSize(true);
 
         //recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, true));
